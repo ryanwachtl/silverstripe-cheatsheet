@@ -1,3 +1,3 @@
 
-<h3><a name="{{ item.title | slugify }}" href="#{{ item.title | slugify }}">{{ item.title }}</a> <a href="{{ item.external | default: 'http://doc.silverstripe.org/' }}" title="{{ item.title }} @ SilverStripe Docs"><i class="{{ item.icon | default: 'icon-file-text' }}"></i></a></h3>
+<h3><a name="{{ item.title | slugify }}" href="#{{ item.title | slugify }}">{{ item.title }}</a> <a href="{{ item.external }}" title="{{ item.title }} @ SilverStripe Docs"><i class="icon-file-text"></i></a></h3>
 {{ item.content }}
