@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+	{% include header.html %}
+
+	<div class="page-content">
+		<div class="wrapper">
+			{{ content }}
+		</div>
+	</div>
+
+	{% include footer.html %}
+
+	<script src="{{ "/assets/js/jquery.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/js/jquery.highlight-4.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/js/foundation.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/js/google-code-prettify/prettify.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/js/app.js" | prepend: site.baseurl }}"></script>
+</body>
+
+</html>
